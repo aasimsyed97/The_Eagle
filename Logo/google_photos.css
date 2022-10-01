@@ -1,0 +1,49 @@
+
+body {
+    margin: 0;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+  }
+  /* Main Styles */
+  
+  .wrapper {
+    width: 200px;
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .yellow,
+  .blue {
+    width: 100%;
+    height: 55%;
+  }
+  
+  .red,
+  .green {
+    width: 55%;
+    height: 100%;
+  }
+  
+  .yellow {
+    border-radius: 1in 1in 0 7px;
+    place-self: end;
+    background: #fbbc01;
+  }
+  
+  .red {
+    border-radius: 7px 1in 1in 0;
+    background: #ea4132;
+  }
+  
+  .green {
+    border-radius: 1in 0 7px 1in;
+    place-self: end;
+    background: #069e57;
+  }
+  .blue {
+    border-radius: 0 7px 1in 1in;
+    background: #4086f4;
+  }
+  
