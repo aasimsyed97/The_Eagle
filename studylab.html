@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav {
+            width: 100%;
+            height: 80px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #nav>div:first-child {
+            width: 10%;
+            height: 100%;
+            padding: 0px 20px;
+            text-align: center;
+            background-color: rgb(64, 64, 234);
+            color: white;
+        }
+
+        #nav>div:last-child {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        #nav>div:last-child>h4:first-child {
+            color: blue;
+        }
+
+        #container {
+            width: 100%;
+            height: 550px;
+        
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+
+        #container>div:first-child {
+            width: 35%; 
+            padding: 20px;
+        }
+
+        #container>div:first-child>h4 {
+            color: blue;
+        }
+
+        #container>div:first-child>p {
+            line-height: 25px;
+            font-size: 20px;
+            color: gray;
+        }
+
+        #container>div:first-child>div {
+            width: 100%;
+            height: 150px;
+            
+            display: flex;
+        }
+        #container>div:first-child>div>img{ 
+            width: 200px;
+            height: 100px;
+            border: 2px solid;
+            margin: 0px 20px;
+            border-radius: 10px;
+        }
+        #container>div:last-child {
+            width: 35%;
+            height: 550px;
+            
+        }  
+        #box>div:first-child{  
+             width: 90%;
+             display: flex;
+             justify-content: space-around;
+            
+             margin-bottom: 30px;
+        }
+        #box>div:first-child>div{ 
+             width: 35%;
+             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+             padding: 20px 20px;
+             border-radius: 10px;
+         } 
+         #box>div:first-child>div>img{ 
+             width: 70px;
+             height: 70px;
+             border-radius: 50%;
+         }
+        #box>div:last-child{ 
+            width: 90%;
+             display: flex; 
+             justify-content: space-around;
+            
+            
+               }
+         #box>div:last-child>div{ 
+            width: 35%;
+             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+             padding: 20px 20px;
+             border-radius: 10px;
+         } 
+         #box>div:last-child>div>img {
+            width: 70px;
+             height: 70px;
+             border-radius: 50%;
+         }
+         #box>div:last-child>div>p{ 
+             color: grey;
+         }
+         #box>div:first-child>div>p{ 
+             color: grey;
+         }
+         
+
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div>
+            <h1> StudyLab</h1>
+        </div>
+        <div>
+            <h4>Home</h4>
+            <h4> About</h4>
+            <h4> Cources</h4>
+            <h4> Instructor</h4>
+            <h4> Blog</h4>
+            <h4> Contact</h4>
+        </div>
+    </div>
+
+    <div id="container">
+        <div>
+            <h4> Welcome to StudyLab</h4>
+            <h1> We ARe StudyLab An Online Learning Center</h1>
+            <P> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quod id, iusto laudantium odio ipsam
+                et. Sapiente, placeat distinctio reiciendis vitae nam totam rem cumque
+                error.</P>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit veniam velit tenetur a omnis ducimus
+                tempore, voluptate dicta culpa perspiciatis impedit veritatis dignissimos at corrupti laboriosam numquam
+                pariatur suscipit nihil.</p>
+            <div> <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAb1BMVEX/AAD/////enr/5ub/xsb/9vb/8/P/0tL/6en/7u7/+vr/srL/2dn/4eH/ysr/i4v/MzP/a2v/KCj/Ojr/dnb/Vlb/UVH/b2//gYH/Q0P/ISH/Y2P/EBD/qKj/t7f/lJT/SUn/oKD/mpr/vr7/XFyNnfwlAAADNklEQVRoge3a2ZKqMBAA0CRCWAOIqCCoMM7/f+MlLIrL3KKTTM9L+mlqLOvI1t0JTejfBLGuda1rXetaF+iGoct5EPi+v+lDxLHXRzKF/DuOhfxk4/tBEHAehqpuyPnGu0VdylixrfdtleUnsiqaU7ZrD9/1kbHy63xLRMDdTz/jzRVRWuyzdci6OLXbtEvc/7nO1iT4HNWX+4N7W3kulSP96P7isd5DvLnuDoElJHlxwxaFJcR7dhkSSxp/6TpYLCHHhRtWeO54pgn24RJSP1yMR+gejZjdIMd0yW12Y1SWFLN7xnWr2T3iunkwuQdcVz5J0uU4qfkRzuiKBtk9jy7y7UxIOboJtrsf3QjbzUb3CvqOATcfXVDtLV39Un1yB/cb8h1Gqaf7vDebwQUVXyYTzUWzkMSKLuWplusNLihdsakhE7WG60jXBd2is9s3Kerp9SJdWNV/uBr1c3A3oOXJ0qVuqeZG0oWVhSeXUn+v4nbShZWFF7e/zAoZ7CpdT8+lYQeuo6kJtz/Z0NRZShdWBj+5/bWCXeZCurDFwme3T52Qp+JozqUhoJxuDbp9IlidOmujbn+ZV1bIb8NutPIimz3eZHWhMOmuv7rTfWXi+aUuqDk8mnIvsCRdmMmTwGw15UnNekQDeGObGnA7sDrVQa267yjtpZ41+xyh2MFHWn0dV+yupr5OtY89qy/XL+p9u0b3PPXtKusUSFL8EOM6pYW6mqsjue0uXdBvZ/qrQbkHLV3QbVnGraZ6X3d/Qb5jYs8p/9t9FVhBMhD1H+2bpaMLS9AGIhpdF/OthoxpX5QqrWE1Ip5ctJdWY+R8cpEfpPs+v8B1y9lF3nB3ZpcWmOzJv7uoGWt4MTm9D8V8kuKFi3jAJV24sD13ndjxJxftleg0WfCYZ9Dr1IDsco4C4VRXAX13qfjtuzp6WM9zMuL6ayWxKW5L6W0uKIyjtKxbY61As9sXaZcEL8wP81ehy4NN7FzOXVoydqzr/aGtdll++rGdbJo8y3aVnIHaFoyV1y66eUJOY30E1s6bhcPw1zj9NYx/LUP+b5j44u6amS+Iazqsa13rWte61rWuda1rXZ34B9/LMz/fBlkTAAAAAElFTkSuQmCC "
+                    alt="Error"> 
+                  <h2> Learn Anything From StudyLab, Watch Video</h2> </div>
+        </div>
+        <div id="box"> 
+       <div>   
+            <div><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Anirban_Majumdar_e001629fcc.jpeg" alt=" Error">
+            <h3> Top Quality Content</h3>  
+        <P> A Small river Named Dudan Flows BY Their Place And Supplies...</P></div>
+            <div> <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Anirban_Majumdar_e001629fcc.jpeg" alt=" Error">
+                <h3> Top Quality Content</h3>  
+            <P> A Small river Named Dudan Flows BY Their Place And Supplies...</P> </div>
+        </div>
+      <div> 
+        <div>  <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Anirban_Majumdar_e001629fcc.jpeg" alt=" Error">
+            <h3> Top Quality Content</h3>  
+        <P> A Small river Named Dudan Flows BY Their Place And Supplies...</P></div>
+        <div><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Anirban_Majumdar_e001629fcc.jpeg" alt=" Error">
+            <h3> Top Quality Content</h3>  
+        <P> A Small river Named Dudan Flows BY Their Place And Supplies...</P> </div>
+      </div> 
+        </div>
+    </div>
+</body>
+
+</html>
