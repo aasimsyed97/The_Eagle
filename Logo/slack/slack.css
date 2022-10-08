@@ -9,8 +9,8 @@ body {
 #container {
   width: 200px;
   aspect-ratio: 1;
-  top: 50%;
-  left: 50%;
+  top: 35%;
+  left: 35%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0px;
