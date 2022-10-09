@@ -1,0 +1,272 @@
+
+ @import url('https://fonts.googleapis.com/css?family=Bangers');
+
+ *, *:before, *:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ html,
+ body {
+   line-height: 1;
+ }
+ 
+ html {
+   font-size: 1px;
+ }
+ 
+ body {
+   font-size: 0;
+   text-align: center;
+   margin: 50rem 0;
+ }
+
+
+
+
+
+
+
+
+
+#hero {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 30rem;
+    width: 300rem;
+    height: 300rem;
+    z-index: 1;
+    background: #bfc4d2;
+    text-align: left;
+    border: solid 1rem #7d87a4;
+    box-shadow: inset 0 0 10rem 0 rgba(0, 0, 0, 0.4);
+    border-radius: 4rem;
+  }
+  #hero *, #hero *:before, #hero *:after {
+    transition: all 0.14s cubic-bezier(0.13, 1, 0.44, 0.81);
+  }
+  #hero header {
+    position: absolute;
+  }
+  #hero main {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 26rem;
+    width: 100%;
+  }
+  #hero main:before {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -113rem;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 44rem 113rem 144rem 0;
+  }
+  #hero main:after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 44rem 0 144rem 113rem;
+  }
+  
+  #hero.batman header {
+    background: #000;
+    width: 56rem;
+    height: 66rem;
+    top: 32rem;
+    left: 50%;
+    margin-left: -28rem;
+    border-top-left-radius: 30rem 28rem;
+    border-top-right-radius: 30rem 28rem;
+  }
+  #hero.batman header:before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    margin-top: -3rem;
+    margin-left: -28rem;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 16rem 25rem 3rem;
+  }
+  #hero.batman header:after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    margin-top: -3rem;
+    margin-left: 9rem;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 3rem 25rem 16rem;
+  }
+  #hero.batman header div:nth-child(1) {
+    position: absolute;
+    width: 62rem;
+    left: 50%;
+    bottom: 0;
+    margin-left: -31rem;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 4rem 50rem 4rem;
+  }
+  #hero.batman header div:nth-child(2) {
+    position: absolute;
+    width: 48rem;
+    left: 50%;
+    bottom: 0;
+    margin-left: -24rem;
+    margin-bottom: -3rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 19rem 4rem 0 4rem;
+  }
+  #hero.batman header div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    margin-top: -20rem;
+    margin-left: -26rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 8rem 26rem 0 26rem;
+  }
+  #hero.batman header div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    width: 40rem;
+    left: 50%;
+    bottom: 0;
+    margin-left: -20rem;
+    margin-bottom: -11rem;
+    border-style: solid;
+    border-color: #ffaa77 transparent transparent transparent;
+    border-width: 11rem 13rem 0 13rem;
+  }
+  #hero.batman header div:nth-child(3) {
+    position: absolute;
+    top: 31rem;
+    left: 5rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 9rem 12rem 0 10rem;
+  }
+  #hero.batman header div:nth-child(3):after {
+    content: " ";
+    position: absolute;
+    top: -10rem;
+    left: -9rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 5rem 0 0 22rem;
+    -webkit-animation: batman-blink 2s infinite alternate ease-out;
+    animation: batman-blink 2s infinite alternate ease-out;
+  }
+  #hero.batman header div:nth-child(4) {
+    position: absolute;
+    top: 31rem;
+    right: 5rem;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 9rem 12rem 0 10rem;
+  }
+  #hero.batman header div:nth-child(4):after {
+    content: " ";
+    position: absolute;
+    top: -10rem;
+    right: -10rem;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    border-width: 5rem 22rem 0 0;
+    -webkit-animation: batman-blink 2s infinite alternate ease-out;
+    animation: batman-blink 2s infinite alternate ease-out;
+  }
+  #hero.batman main:before {
+    border-right-color: #000;
+  }
+  #hero.batman main:after {
+    border-left-color: #000;
+  }
+  #hero.batman main div:nth-child(1):before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 0;
+    margin-left: -70rem;
+    border-style: solid;
+    border-color: transparent #352f3a transparent transparent;
+    border-width: 44rem 70rem 90rem 0;
+  }
+  #hero.batman main div:nth-child(1):after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 0;
+    border-style: solid;
+    border-color: transparent transparent transparent #352f3a;
+    border-width: 44rem 0 90rem 70rem;
+  }
+  #hero.batman main div:nth-child(2) {
+    position: absolute;
+    background: #000;
+    overflow: hidden;
+    z-index: 1;
+    width: 70rem;
+    height: 24rem;
+    left: 50%;
+    margin-top: -99rem;
+    margin-left: -35rem;
+  }
+  #hero.batman main div:nth-child(2):before {
+    content: " ";
+    position: absolute;
+    background: transparent;
+    width: 70rem;
+    height: 70rem;
+    top: -70rem;
+    left: 0;
+    border-radius: 30rem / 15rem;
+    box-shadow: -33rem 84rem 0 0 #352f3a, -60rem 68rem 0 0 #352f3a, 33rem 84rem 0 0 #352f3a, 60rem 68rem 0 0 #352f3a;
+  }
+  #hero.batman main div:nth-child(2):after {
+    content: " ";
+    position: absolute;
+    background: transparent;
+    width: 12rem;
+    height: 6rem;
+    top: -6rem;
+    left: 0;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    box-shadow: 23rem 6rem 0 0 #352f3a, 35rem 6rem 0 0 #352f3a, 29rem 5rem 0 -2rem #352f3a;
+  }
+  
+  @-webkit-keyframes batman-blink {
+    80%,
+    100% {
+      border-top-width: 10rem;
+    }
+  }
+  @keyframes batman-blink {
+    80%,
+    100% {
+      border-top-width: 10rem;
+    }
+  }

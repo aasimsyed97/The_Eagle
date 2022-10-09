@@ -1,0 +1,23 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    place-content: center;
+  } 
+ 
+  #cont{ 
+     width: 300px;  
+     height: 150px;
+     background-color: rgb(227, 44, 44); 
+     margin: auto; 
+     justify-content: center; 
+     align-items: center; 
+     margin-top: 20%; 
+     border-radius: 40px;
+  } 
+  #box{ 
+     width: 0; 
+     color: white; 
+     border-top:50px ;
+  }
