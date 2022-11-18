@@ -121,50 +121,50 @@ function runProgram(input) {
     }
     
 ***************************
-// function runProgram(input) {
+function runProgram(input) {
     
-// // 3 4
-// // 1 2 3 6
-// // 4 5 6 7
-// // 7 8 9 2
-//     input = input.trim().split('\n')
-//      let [row,col] = input[0].trim().split(" ").map(Number) 
+// 3 4
+// 1 2 3 6
+// 4 5 6 7
+// 7 8 9 2
+    input = input.trim().split('\n')
+     let [row,col] = input[0].trim().split(" ").map(Number) 
 
-//     let mat=[]
+    let mat=[]
     
   
 
-//     for(let i=0;i<row;i++){
-//         mat.push(input[i+1].trim().split(" ").map(Number))
-//     }
-//     rotateElem(row,col,mat)
-// =============================================
-// 2d array with tc 
+    for(let i=0;i<row;i++){
+        mat.push(input[i+1].trim().split(" ").map(Number))
+    }
+    rotateElem(row,col,mat)
+=============================================
+2d array with tc 
 
-//    input = input.trim().split('\n')
-//          let tc=+(input[0]);
+   input = input.trim().split('\n')
+         let tc=+(input[0]);
         
-//          let line=1;
-//           for(let j=0;j<tc;j++){
-//                let[n,m] =(input[line++].trim().split(" ").map(Number))
-//          let mat=[]
+         let line=1;
+          for(let j=0;j<tc;j++){
+               let[n,m] =(input[line++].trim().split(" ").map(Number))
+         let mat=[]
 
-//     for(let i=0;i<n;i++){
-//         mat.push(input[line++].trim().split(" ").map(Number))
-//          }
-//     goV(n,m,mat)
-//   }
+    for(let i=0;i<n;i++){
+        mat.push(input[line++].trim().split(" ").map(Number))
+         }
+    goV(n,m,mat)
+  }
      
-//   }
+  }
 
-// ***********************************
-// let numbers="  3 4 5 6 7"
-// numbers = numbers.trim().split(" ").map(Number)
+***********************************
+let numbers="  3 4 5 6 7"
+numbers = numbers.trim().split(" ").map(Number)
 
-// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-//  input = input.trim().split("\n")
-//     let tc = Number(input[0])
-//     let line = 1
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ input = input.trim().split("\n")
+    let tc = Number(input[0])
+    let line = 1
     
 //     for(let i=0;i<tc;i++){
 //         let num1 = Number(input[line]) 
